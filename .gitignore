@@ -1,0 +1,46 @@
+# Accidental nested clone (folder contains its own .git — breaks plain clones)
+/CerebraWatch/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Data tree (EEG subjects, MRI volumes, exported PDFs — do not commit PHI)
+data/sub-*/
+data/mri/sub-*/
+data/reports/
+# Legacy paths if files were left at repo root
+sub-*/
+mri/sub-*/
+reports/
+sourcedata/
+*.edf
+*.eeg
+*.dat
+*.vhdr
+*.vmrk
+*.nii
+*.nii.gz
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDEs
+.idea/
+.vscode/
+*.swp
